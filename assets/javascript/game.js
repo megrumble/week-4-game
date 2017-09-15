@@ -23,7 +23,7 @@ var reset = function () {
     console.log(target);
 }
 $(".white").on("click", function () {
-  number += (white)
+  number += white
 });
 
 reset();
