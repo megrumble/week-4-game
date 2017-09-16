@@ -38,3 +38,9 @@ h3 {
     color: #469CB6;
     text-align: center;
 }
+.start {
+    width: 100%;
+   background-color: #2F0A2F;
+   font-size: 23px;
+   color:  #EBB6C0;
+}
