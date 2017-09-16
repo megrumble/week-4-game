@@ -13,15 +13,13 @@ $(".wins").text(wins);
 $(".losses").text(losses);
 
 $(".start").on("click", function(){
-    start();
-}
-var start = function () {
+
     wins=0;
     losses=0;
     $(".wins").text(wins);
     $(".losses").text(losses);
     reset ();
-}
+})
 var reset = function () {
     number = 0;
     target = Math.floor((Math.random() * 100) + 24);
@@ -29,7 +27,7 @@ var reset = function () {
     rainbow = Math.floor((Math.random() * 9) + 1);
     flower = Math.floor((Math.random() * 9) + 1);
     blue = Math.floor((Math.random() * 9) + 1);
-
+    $(".number").text(number);
 
     $("#target").empty();
     $("#target").text(target);
