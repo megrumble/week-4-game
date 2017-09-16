@@ -15,7 +15,8 @@ h2 {
 }
 h3 {
     text-align: center;
-    color: #EBB6C0;
+    color: #469CB6;
+    margin-top: 10px;
 }
 
 .img-responsive {
@@ -31,4 +32,9 @@ h3 {
     color: #EBB6C0;
     text-align: center;
 
+}
+.score {
+    font-size: 30px;
+    color: #469CB6;
+    text-align: center;
 }

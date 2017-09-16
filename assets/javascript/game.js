@@ -9,6 +9,8 @@ var white;
 var rainbow;
 var flower;
 var blue;
+$(".wins").text(wins);
+$(".losses").text(losses);
 
 var reset = function () {
     number = 0;
@@ -26,8 +28,7 @@ var reset = function () {
     console.log(blue);
     console.log(flower);
     console.log(rainbow);
-    $("#wins").text(wins);
-    $("#losses").text(losses);
+    
 
 }
 
@@ -36,11 +37,15 @@ var reset = function () {
         $(".number").text("You Win!");
         wins ++;
          reset();
+         $(".wins").text(wins);
+         $(".losses").text(losses);
      }
      if (number > target) {
          $(".number").text("You Lose");
          losses ++;
          reset();
+         $(".wins").text(wins);
+         $(".losses").text(losses);
      }
     }
     
