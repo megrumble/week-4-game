@@ -26,40 +26,49 @@ var reset = function () {
     console.log(blue);
     console.log(flower);
     console.log(rainbow);
-
+    $("#wins").text(wins);
+    $("#losses").text(losses);
 
 }
 
-// var checkScore = function() {
-//     if number===target {
-//         $(".number").text("You Win!");
-//         reset();
-//     }else if number > target{
-//         $(".number").text("You Lose");
-//         reset();
-//     }
-//     checkScore();
+ var checkScore = function() {
+    if (number===target) {
+        $(".number").text("You Win!");
+        wins ++;
+         reset();
+     }
+     if (number > target) {
+         $(".number").text("You Lose");
+         losses ++;
+         reset();
+     }
+    }
+    
 
 
 $(".white").on("click", function () {
     number += white;
     console.log(number);
     $(".number").text(number);
+    checkScore();
 });
 $(".flower").on("click", function () {
     number += flower;
     console.log(number);
     $(".number").text(number);
+    checkScore();
 });
 $(".rainbow").on("click", function () {
     number += rainbow;
     console.log(number);
     $(".number").text(number);
+    checkScore();
 });
 $(".blue").on("click", function () {
     number += blue;
     console.log(number);
     $(".number").text(number);
+    checkScore();
 });
 
 reset();

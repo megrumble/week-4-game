@@ -11,8 +11,13 @@ h1 {
 }
 h2 {
     text-align: center;
-    color: #EBB6C0
+    color: #EBB6C0;
 }
+h3 {
+    text-align: center;
+    color: #EBB6C0;
+}
+
 .img-responsive {
     margin: 5px;
 }
